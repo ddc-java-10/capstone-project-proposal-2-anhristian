@@ -1,61 +1,70 @@
 ---
-title: My capstone project
-description: "Trust me, it'll be cool"
+title: Java Empower
+description: "Practice and strenghten your knowledge"
 layout: default
 ---
 
 ## Summary
 
-Replace this paragraph with one or more paragraphs summarizing the purpose and operation of the software you propose to develop in this project.
+**Java Empower** is a learning app on the Java learning material that will help to strengthen your knowledge based on sets of quizzes.
 
 ## Intended users
 
-Write a bullet list here, including at least 2 different types of intended users. Make it reasonably specific; simply saying "Anyone who likes games" (for example) is not sufficiently specific.
+* Java students that want to practice their theoretical skills and want to be able to choose from different categories or want to insist on repeating a set of quizzes.
 
-For each type of intended user, include at least 1 _user story_. A user story is usually just 1 simple sentence (no more than 2 sentences), in the voice of the intended user, stating a specific task that the user needs to perform, and the benefit that will be obtained. The simplest user stories take the form 
+> As a Java student, I find myself very useful to have a set of questions through which I could go over and over and practice the understanding of concepts.
 
-> As a <type of intended user (_who_)> I want to <goal (_what_)> so that <benefit (_why_).
+* Java teachers/instructors that want to have some questions ready to go for quizzes that they give to their students.
 
-Please avoid writing too much for the user story. In particular, if the way the user story is written makes it difficult to see the _who_, _what_, and _why_, then you probably need to re-write it more directly. (On the other hand, a user story should not simply be a re-statement of the intended user description.)
-
-Here is one (silly) example of an intended user, along with a user story. Please note not only the conceptual structure, but the Markdown syntax used.
-
-* People who like to use randomness in their decision making.
-
-    > As someone who enjoys randomness in my life, I need an app that lets me flip a virtual coin or roll one or more virtual dice, so that I can base my decisions on randomness, without having to carry coins or dice in my pockets.
+> Some instructors may find useful to have quizzes that they could use in their teaching process and could choose from lists those questions that are actual for their topics.
 
 ## Client component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the user interface&mdash;i.e. tell us what the user will be able to do in the GUI.
+The users will be able to put in the searching bar the topic needed and choose from different sections and after that, they could go through a specific number of questions.
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the client side. This should include any information that a user of your system should expect to be maintained locally (i.e. without connection to a server) across multiple sessions of use, on a single device. 
+* The questions that wanted to be repeated more often.
+
+* The history of searches.
+
+* The history of last done quizzes.
+
+* The user’s login information
     
 * **Device/external services**
 
-    If the client component will need to access special services of the device (e.g. sensors, contacts, messaging), list them here. Also, if the client component will need to access already-existing external services (e.g. real-time weather data, Open Trivia Database), those should also be listed here; any such references to external services should include links to the main page or API description page for the service.
+* Writing text access to be able to write needed information.
     
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
+* Google Sing in
+
     
 ## Server component
 
 * **Functionality**
 
-    List the key functional aspects that will be provided by the server component&mdash;i.e. tell us what parts of the system functionality will be performed by the server.
+At the users' command, the server will provide the quiz with multi choice questions and will give the possibility to choose the answer. After the chosen answer it will display the results and in case it is wrong will show the right one with references to a source (book).
 
 * **Persistent data**
 
-    Summarize, in general terms, what content will be stored on the server side. This should include any information that a user of your system should expect to be accessible across multiple sessions of use, even if accessed from separate devices. In addition, if there will be data originating from some users that will then be accessible by other users, it should be part of the persistent data on the server. 
+The server will hold:
+
+* the database with quizzes and will display the accessed information.
+
+* given answers amd explanations to the questions.
+
+* references to the books where those answers could be found.
+
+* the references to the books where those answers could be found.
+
     
 * **External services**
 
-    If the server component will need to access already-existing external services (e.g. stock prices, Open Movie Database), those should also be listed here. Any such references to external services should include links to the main page or API description page for the service.
-    
-For listing multiple items, please use bullet lists (or ordered lists, if order is relevant), not just separate lines or paragraphs of text.
+
+* the references to books and where those books could be found for more studying, such as Barnes Nobles bookstore or Amazon. 
     
 ## Stretch goals/possible enhancements 
 
-If you can identify functional elements of the software that you think might not be achievable in the scope of the project, but which would nonetheless add significant value if you were able to include them, list them here. For now, we recommend listing them in order of complexity/amount of work, from the least to the most.
+As a possible enhancement could be the ability of the users to add comments on the references part, where they could add more books ‘suggestions.
